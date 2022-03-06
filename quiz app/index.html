@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <h1>Create Quiz</h1>
+
+        <form action="/">
+          <label for="question-input">Question:</label>
+          <input
+            type="text"
+            id="question-input"
+            placeholder="Enter Your Question?"
+          />
+          <div>
+            <button
+              class="answer-btn"
+              id="ans1"
+              onclick="changeBtnsBackground('ans1')"
+            >
+              &#10003;</button
+            ><input
+              type="text"
+              class="answer-input"
+              id="inp1"
+              placeholder="Answer 1"
+            />
+          </div>
+          <div>
+            <button
+              class="answer-btn"
+              id="ans2"
+              onclick="changeBtnsBackground('ans2')"
+            >
+              &#10003;</button
+            ><input
+              type="text"
+              class="answer-input"
+              id="inp2"
+              placeholder="Answer 2"
+            />
+          </div>
+          <div>
+            <button
+              class="answer-btn"
+              id="ans3"
+              onclick="changeBtnsBackground('ans3')"
+            >
+              &#10003;</button
+            ><input
+              type="text"
+              class="answer-input"
+              id="inp3"
+              placeholder="Answer3"
+            />
+          </div>
+          
+        </form>
+
+        <div class="options">
+          <div>
+            <button class="add-btn">Add Answer</button>
+            <button class="start-btn">Start Quiz</button>
+            <button class="delete-btn">Delete Quiz</button>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="answers">
+          <!-- <div class="answer">
+            <p>Question:</p>
+            <div>
+              <span><input type="radio" name="answers" id="" value="" /></span>
+              <span><input type="radio" name="answers" id="" value="" /></span>
+              <span><input type="radio" name="answers" id="" value="" /></span>
+            </div>
+            <button class="submit">Submit</button>
+          </div>
+      </div> -->
+     <!--  <div class="results">
+        <h2>Results</h2>
+        <hr />
+        <p></p>
+        <br>
+        <button class="retake">Retake quiz</button>
+      </div> -->
+    </div>
+   
+    <span class="fail-message notify">
+      <span class="close">&times;</span>
+      <p>Please Complete quiz!</p>
+    </span>
+    
+    <span class="fail-answers notify">
+      <span class="close">&times;</span>
+      <p>Please Choose one answer!</p>
+    </span>
+
+    <span class="question-message notify">
+      <span class="close">&times;</span>
+      <p>New Question added</p>
+    </span>
+
+    <span class="quiz-message notify">
+      <span class="close">&times;</span>
+      <p>Quiz Created</p>
+    </span>
+
+    <span class="delete-message notify">
+    
+      <span class="close">&times;</span>
+      <p>Quiz Deleted</p>
+    </span>
+   
+  </body>
+</html>
